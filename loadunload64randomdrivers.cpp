@@ -208,7 +208,7 @@ void loadunload64randomdrivers()
 			unload_driver(wst_servicename);
 
 			//Try to load first item for testing
-			if (i == 1) break;
+			if (i == 0) break;
 		}
 		catch (std::exception ex)
 		{
