@@ -158,6 +158,7 @@ string remove(char* charToRemove, string &str) {
 	return str;
 }
 
+//TODO: make it real "RANDOM"
 void loadunload64randomdrivers()
 {
 	const std::string DRIVERS_PATH = "C://Windows//System32//drivers//";
@@ -207,7 +208,7 @@ void loadunload64randomdrivers()
 			unload_driver(wst_servicename);
 
 			//Try to load first item for testing
-			if (i == 64) break;
+			if (i == 1) break;
 		}
 		catch (std::exception ex)
 		{
